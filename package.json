@@ -1,0 +1,23 @@
+{
+  "name": "Node-Mocha-Chai-Tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattfili/Node-Mocha-Chai-Tester.git"
+  },
+  "author": "Matt Fili <mattjfili@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattfili/Node-Mocha-Chai-Tester/issues"
+  },
+  "homepage": "https://github.com/mattfili/Node-Mocha-Chai-Tester",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}
