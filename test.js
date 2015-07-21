@@ -8,11 +8,33 @@ describe('Tests', function() {
     });
 });
 
+
+
 describe('Animal', function () {
+
+	describe('#updateHealthStats()', function() {
+		it('should change the health', function(){
+			var animal = new Animal();
+			var health = animal.health
+
+			animal.updateHealthStats(function () {
+				animal.health.should.not.equal(health)
+				done();
+				
+			});
+		});
+	});
+
 	describe('constructor', function () {
+
+		it('should accept a type', function() {
+			var cat = new Animal('cat')
+			cat.type.should.equal('cat')
+
+		});
+
 		it('should return an animal object', function () {
 			var animal = new Animal();
-
 
 			animal.should.be.an('object');
 			animal.should.be.an.instanceOf(Animal);
@@ -23,6 +45,12 @@ describe('Animal', function () {
 
 			animal.isAlive.should.be.true;
 		});
+
+		it('should have 100% health', function() {
+			var animal = new Animal();
+			animal.health.should.equal(1);
+		});
+
 	});
 });
 
