@@ -7,7 +7,22 @@ describe('Tests', function() {
     });
 });
 
+
+
 describe('Array', function () {
+	describe('#filter()', function () {
+		it('should return an array of items that return truthy in the inn fn', function () {
+			var array = [1,2,3,4,5]
+
+			var output = array.filter(function (item) {
+				return item % 2;
+			})
+
+			output.should.eql([1,3,5])
+		});
+	});
+
+
 	describe('#map()', function () {
 		it('should createa  new array with a return value of the inner function', function (){
 			var array = [1,2,3,4,5];
