@@ -17,8 +17,23 @@ describe('Animal', function () {
 			animal.should.be.an('object');
 			animal.should.be.an.instanceOf(Animal);
 		});
+
+		it('should be alive', function () {
+			var animal = new Animal();
+
+			animal.isAlive.should.be.true;
+		});
 	});
 });
+
+describe('#beCute()', function() {
+	it('should make the animal cute', function() {
+		var animal = new Animal();
+		should.not.exist(animal.isCute)
+		animal.beCute();
+		animal.isCute.should.be.true
+	})
+})
 
 
 
