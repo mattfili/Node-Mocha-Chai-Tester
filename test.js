@@ -1,10 +1,23 @@
+var path = require('path')
 var should = require("chai").should()
+var Animal = require(path.join(process.cwd() + '/Animal'));
 
 describe('Tests', function() {
     it('Truthiness', function () {
       	true.should.equal(true);
-
     });
+});
+
+describe('Animal', function () {
+	describe('constructor', function () {
+		it('should return an animal object', function () {
+			var animal = new Animal();
+
+
+			animal.should.be.an('object');
+			animal.should.be.an.instanceOf(Animal);
+		});
+	});
 });
 
 
