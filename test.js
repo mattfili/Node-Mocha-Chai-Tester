@@ -10,7 +10,7 @@ describe('Tests', function() {
     });
 });
 
-describe'Cheers', function() {
+describe('Cheers', function() {
 	it('should check letters are correct', function () {
 		var cheer = new Cheer('Scott')
 		cheer.name.should.equal('Scott')
