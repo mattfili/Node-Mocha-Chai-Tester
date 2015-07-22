@@ -3,7 +3,7 @@ node_js:
   - "0.12"
 
 notifications:
-	email: false
+  email: false
 
 after_success:
   - npm run codeclimate-cov
