@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "istanbul cover _mocha",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "codeclimate-cov": "codeclimate-test-reporter < ./coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/mattfili/Node-Mocha-Chai-Tester",
   "devDependencies": {
     "chai": "^3.2.0",
-    "coveralls": "^2.11.3",
+    "codeclimate-test-reporter": "^0.1.0",
     "istanbul": "^0.3.17",
     "mocha": "^2.2.5",
     "mocha-lcov-reporter": "0.0.2"
