@@ -1,7 +1,7 @@
 var path = require('path')
 var should = require("chai").should()
 var Animal = require(path.join(process.cwd() + '/Animal'));
-var Cheer = require(path.join(process.cwd() + '/Cheers.js'));
+var Cheer = require(path.join(process.cwd() + '/cheers.js'));
 var cp = require('child_process');
 
 describe('Tests', function() {
@@ -30,12 +30,6 @@ describe.only('Cheers', function() {
 
 	it('should correctly assign caps', function () {
 		var cheer = new Cheer('a')
-		var output = cheer.hurrah()
-		output.should.equal('Give me an A!\n')
-	});
-
-	it('should skip non alphabet characters', function () {
-		var cheer = new Cheer('a!')
 		var output = cheer.hurrah()
 		output.should.equal('Give me an A!\n')
 	});
