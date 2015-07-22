@@ -1,7 +1,7 @@
 var path = require('path')
 var should = require("chai").should()
 var Animal = require(path.join(process.cwd() + '/Animal'));
-var Cheer = require(path.join(process.cwd() + '/cheers.js'));
+var Cheer = require(path.join(process.cwd() + '/Cheers'));
 var cp = require('child_process');
 
 describe('Tests', function() {
@@ -11,30 +11,32 @@ describe('Tests', function() {
 });
 
 describe('Cheers', function() {
-	it('should check letters are correct', function () {
-		var cheer = new Cheer('Scott')
-		cheer.name.should.equal('Scott')
-	});
+	describe('#hurrah()', function() {
+		it('should check letters are correct', function () {
+			var cheer = new Cheer('Scott')
+			cheer.name.should.equal('Scott')
+		});
 
-	it('should correctly assign a or an', function () {
-		var cheer = new Cheer('A')
-		var output = cheer.hurrah()
-		output.should.equal('Give me an A!\n')
-	});
+		it('should correctly assign a or an', function () {
+			var cheer = new Cheer('A')
+			var output = cheer.hurrah()
+			output.should.equal('Give me an A!\n')
+		});
 
-	it('should correctly assign spaces', function () {
-		var cheer = new Cheer('A B')
-		var output = cheer.hurrah()
-		output.should.equal('Give me an A!\nGive me a B!\n')
-	});
+		it('should correctly assign spaces', function () {
+			var cheer = new Cheer('A B')
+			var output = cheer.hurrah()
+			output.should.equal('Give me an A!\nGive me a B!\n')
+		});
 
-	it('should correctly assign caps', function () {
-		var cheer = new Cheer('a')
-		var output = cheer.hurrah()
-		output.should.equal('Give me an A!\n')
+		it('should correctly assign caps', function () {
+			var cheer = new Cheer('a')
+			var output = cheer.hurrah()
+			output.should.equal('Give me an A!\n')
+		});
 	});
-
 });
+
 
 describe('Animal', function () {
 
