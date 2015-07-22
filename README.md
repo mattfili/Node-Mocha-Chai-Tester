@@ -1,5 +1,3 @@
 # Node-Mocha-Chai-Tester
 Node Mocha and Chai testing
-
-
-[![Build Status](https://travis-ci.org/mattfili/Node-Mocha-Chai-Tester.svg?branch=master)](https://travis-ci.org/mattfili/Node-Mocha-Chai-Tester)
+[![Build Status](https://travis-ci.org/mattfili/Node-Mocha-Chai-Tester.svg?branch=master)](https://travis-ci.org/mattfili/Node-Mocha-Chai-Tester)[![Code Climate](https://codeclimate.com/github/mattfili/Node-Mocha-Chai-Tester/badges/gpa.svg)](https://codeclimate.com/github/mattfili/Node-Mocha-Chai-Tester)[![Test Coverage](https://codeclimate.com/github/mattfili/Node-Mocha-Chai-Tester/badges/coverage.svg)](https://codeclimate.com/github/mattfili/Node-Mocha-Chai-Tester/coverage)
