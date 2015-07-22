@@ -1,7 +1,7 @@
 var path = require('path')
 var should = require("chai").should()
 var Animal = require(path.join(process.cwd() + '/Animal'));
-var Cheer = require(path.join(process.cwd() + '/Cheers'));
+var Cheer = require(path.join(process.cwd() + '/Cheer'));
 var cp = require('child_process');
 
 describe('Tests', function() {
